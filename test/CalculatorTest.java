@@ -10,7 +10,7 @@ class CalculatorTest {
     void testCalculateAdd() {
         int firstOperand = 1;
         int secondOperand = 1;
-        char operator = '+';
+        char operator = Calculator.ADDITION;
         int expected = 2;
 
         int result = Calculator.calculate(firstOperand, secondOperand, operator);
@@ -22,7 +22,7 @@ class CalculatorTest {
     void testCalculateSub() {
         int firstOperand = 2;
         int secondOperand = 1;
-        char operator = '-';
+        char operator = Calculator.SUBTRACTION;
         int expected = 1;
 
         int result = Calculator.calculate(firstOperand, secondOperand, operator);
@@ -34,7 +34,7 @@ class CalculatorTest {
     void testCalculateMul() {
         int firstOperand = 2;
         int secondOperand = 2;
-        char operator = '*';
+        char operator = Calculator.MULTIPLICATION;
         int expected = 4;
 
         int result = Calculator.calculate(firstOperand, secondOperand, operator);
@@ -46,7 +46,7 @@ class CalculatorTest {
     void testCalculateDiv() {
         int firstOperand = 6;
         int secondOperand = 3;
-        char operator = '/';
+        char operator = Calculator.DIVISION;
         int expected = 2;
 
         int result = Calculator.calculate(firstOperand, secondOperand, operator);
@@ -58,7 +58,7 @@ class CalculatorTest {
     void testCalculateDivByZero() {
         int firstOperand = 2;
         int secondOperand = 0;
-        char operator = '/';
+        char operator = Calculator.DIVISION;
 
         assertThrows(RuntimeException.class,
                 ()-> {Calculator.calculate(firstOperand, secondOperand, operator);});

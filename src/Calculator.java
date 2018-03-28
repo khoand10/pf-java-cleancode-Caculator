@@ -1,8 +1,8 @@
 public class Calculator {
-    final static char ADDITION = '+';
-    final static char SUBTRACTION = '-';
-    final static char MULTIPLICATION = '*';
-    final static char DIVISION = '/';
+    public final static char ADDITION = '+';
+    public final static char SUBTRACTION = '-';
+    public final static char MULTIPLICATION = '*';
+    public final static char DIVISION = '/';
 
     public static int calculate(int firstOperand, int secondOperand, char operator) {
 
